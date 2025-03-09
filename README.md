@@ -288,8 +288,7 @@ String botDirection;
 String distanceStr;               
 String driveTimeStr;
 
-// Ultrasonic sensor pins
-const int trigPin = 6;
+const int trigPin = 6;        // Ultrasonic sensor pins
 const int echoPin = 7;
 
 float duration, distance;
@@ -311,14 +310,14 @@ void setup()
   Serial.println("f = forward, b = backward, r = turn right, l = turn left");
   Serial.println("Example command: f 50 50");
 
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  pinMode(trigPin, OUTPUT);        //sets up trigPin as output
+  pinMode(echoPin, INPUT);        // sets up echoPin as input
 }
 
 /********************************************************************************/
 void loop()
 {
-  // Sensor reading
+  // Sensor reading and pulse sending
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   digitalWrite(trigPin, HIGH);
@@ -331,17 +330,17 @@ void loop()
   Serial.print("Distance: ");
   Serial.println(distance);
   
-  // Stop motors and prevent further execution if obstacle is too close
-  if (distance < 10)
+  
+  if (distance < 10)          // Stop motors and prevent further execution if obstacle is too close
   {
     rightMotor(0);
     leftMotor(0);
-    Serial.println("Obstacle detected! Stopping motors.");
+    Serial.println("Obstacle detected! Stopping motors.");        // print warning command
     return;  // Exit the loop() function early
   }
 
-  // Only process commands if no obstacle is detected
-  if (Serial.available() > 0)
+  
+  if (Serial.available() > 0)  // Only process commands if no obstacle is detected
   {
     botDirection = Serial.readStringUntil(' ');
     distanceStr = Serial.readStringUntil(' ');
