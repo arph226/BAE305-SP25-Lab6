@@ -20,7 +20,7 @@
 
 
 # Test Procedures
-## Part 1: Learn to Listen (Ultrasonic Sensor Setup)
+## Part 1: Learn to Listen 
 1. Setup the Ultrasonic Sensor:
     - Connect the ultrasonic sensor HC-SR04 to the RedBoard as shown in Figure 1 in the Assembly Procedures.
     - Trig Pin to pin 11 on the RedBoard.
@@ -40,7 +40,7 @@
     - Review the measurements from the serial monitor and determine the resolution (difference in output for each change in distance).
     - To test this we moved the breadboard we were using to block the sensor from 5 cm away to 5.1 cm and recorded this difference. In the future, we would test more than one measurement for this.
 
-## Part 2.1: Move It (Motor Control and Collision Avoidance)
+## Part 2.1: Move It 
 1. Motor Driver and Motor Setup:
     - Disconnect the ultrasonic sensor from pins 11 and 12 on the RedBoard and move it to pins 7 and 6.
     - Connect the motor driver and two motors to the RedBoard as shown in the schematic (Figure 2).
@@ -123,7 +123,7 @@ void loop() {
 |25	|24.11|
 |30|	28.86|
 
-<p align="left"><em> Table 1: This table shows the set distance a breadboard is placed away from the sensor, measured by a ruler, compared to the distance measured by the sensor and printed by the serial monitor. As shown, these values are very close, with only slight errors that can be contributed to descrepancies in the precision of measurement with a ruler.  </em></p>
+<p align="left"><em> Table 1: This table shows the set distance a breadboard is placed away from the sensor, measured by a ruler, compared to the distance measured by the sensor and printed by the serial monitor. As shown, these values are very close, with only slight errors that can be contributed to discrepancies in the precision of measurement with a ruler.  </em></p>
 
 **Ultrasonic Sensor Precision**
 | Distance Moved (cm) | Measured Distance (cm)|
