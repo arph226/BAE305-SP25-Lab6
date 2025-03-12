@@ -21,9 +21,10 @@ Sparkfun Inventor's Kit: RedBoard, ultrasonic sensor HC-SR04, two motors, motor 
 To start, we built the ultrasonic sensor circuit shown in Figures 1.1 and 1.2. 
 
 ![image](https://github.com/user-attachments/assets/b834b017-79fc-4097-9e09-9e1aa49d80a4)
+<p align="left"><em>Figure 1.1: Schematic of Circuit 1. Source: Sparkfun Experiment Guide "Circuit 3B: Distance Sensor" </em></p>
 
 ![image](https://github.com/user-attachments/assets/07efb9cb-0f47-4c75-a698-2548d28765c3)
-
+<p align="left"><em>Figure 1.2: Image of Circuit 1. </em></p>
 
 After launching Arduino IDE on the computer, we selected our Arduino Uno following the menu (Tools>Board>Arduino Uno) and connected the corresponding COM port through (Tools>Port>COM1). 
 
@@ -32,10 +33,13 @@ After launching Arduino IDE on the computer, we selected our Arduino Uno followi
 For this section, we built a new circuit shown in Figures 2.1, 2.2, and 2.3. We kept the ultrasonic sensor from Part 1 and moved it down to Rows 22-25. We also moved the sensor connections to pins 7 and 6. 
 
 ![image](https://github.com/user-attachments/assets/cb0ebc97-663e-40f2-a6ba-28f4b47a4da1)
+<p align="left"><em>Figure 1.1: Schematic of Circuit 2. Source: Sparkfun Experiment Guide "Circuit 5B: Remote-Controlled Robot" </em></p>
 
 ![image](https://github.com/user-attachments/assets/dec67ddd-f55a-487d-b39d-22821a3a2270)
+<p align="left"><em>Figure 1.2: Image of Circuit 2. </em></p>
 
 ![image](https://github.com/user-attachments/assets/3b2e5a97-eaa0-45ea-8db3-04889987e178)
+<p align="left"><em>Figure 1.2: Image of Circuit 2. </em></p>
 
 
 
