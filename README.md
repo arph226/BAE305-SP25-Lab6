@@ -11,13 +11,31 @@
 
 
 # Materials
-
+Computer running Arduino IDE
+Sparkfun Inventor's Kit: RedBoard, ultrasonic sensor HC-SR04, two motors, motor driver, standard wires
 
 # Assembly Procedures  
 
+###Part 1 - Learn to Listen
+
+To start, we built the ultrasonic sensor circuit shown in Figures 1.1 and 1.2. 
+
+insert 1.1
+
+insert 1.2
+
+After launching Arduino IDE on the computer, we selected our Arduino Uno following the menu (Tools>Board>Arduino Uno) and connected the corresponding COM port through (Tools>Port>COM1). 
+
+###Part 2 - Move It
+
+For this section, we built a new circuit shown in Figures 2.1 and 2.2. We kept the ultrasonic sensor from Part 1 and moved it down to Rows 22-25. We also moved the sensor connections to pins 7 and 6. 
+
+insert 2.1
+
+insert 2.2
 
 # Test Equipment
-
+Standard straightedge ruler
 
 # Test Procedures
 ## Part 1: Learn to Listen 
