@@ -12,6 +12,7 @@ In this lab, we combined sensor interfacing with motor control to build a basic 
 
 # Materials
 Computer running Arduino IDE
+
 Sparkfun Inventor's Kit: RedBoard, ultrasonic sensor HC-SR04, two motors, motor driver, standard wires
 
 # Assembly Procedures  
