@@ -459,6 +459,7 @@ void leftMotor(int motorSpeed)
 
 # Discussion
 Discussion Question 1: What is the minimum speed number for the motors to move forward?
+
 We found the minimum speed to be 30. 
 
 # Conclusion
