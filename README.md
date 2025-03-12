@@ -60,7 +60,7 @@ Standard straightedge ruler
     - Use the code provided in the lab instructions and online in the Adruino Project Hub and upload it to the RedBoard. See Program 1 in the results for our code.
     - The program will read the distance from the ultrasonic sensor and send the value over serial communication to the computer. Test to make sure the serial monitor is reading values
 4. Test the Algorithm:
-    - Use a ruler to measure the distance between the sensor and an object. Be sure to have the ruler at the same starting point each time. There will be a gap where the sensor ends and the ardino base, so account for this difference.
+    - Use a ruler to measure the distance between the sensor and an object. Be sure to have the ruler at the same starting point each time. There will be a gap between the sensor and the Arduino base, so account for this difference.
     - Observe the distance readings from the serial monitor.
     - Verify the accuracy and precision of the sensor by measuring the distance for various points (e.g., 5 cm, 10 cm, 20 cm, etc.) and compare the readings from the serial monitor with actual measurements. These results are shown in Table 1.
 5. Test the Precision
@@ -73,7 +73,7 @@ Standard straightedge ruler
     - Connect the motor driver and two motors to the RedBoard as shown in the schematic (Figure 2).
     - Ensure proper connections between the motor driver, motors, and the RedBoard's control pins by cross checking between the circuit and schematic
 2. Upload the Motor Control Code:
-    - Upload the motor control code to the RedBoard. We used the code from the lab procedures (sparkfun) as a base and has Chatgpt help us with any errors we encountered.
+    - Upload the motor control code to the RedBoard. We used the code from the lab procedures (Sparkfun) as a base and had Chatgpt help us with any errors we encountered.
     - The code should allow you to control the direction and speed of the motors via serial commands. 
 3. Test Motor Movement:
     - Use serial commands to control the motors. For example:
@@ -118,7 +118,7 @@ void setup() {
   Serial.begin(9600);
 }
 
-//set trig low for 2 seconds, then high 10 micro seconds
+//set trig low for 2 seconds, then high 10 microseconds
 void loop() {
   digitalWrite(trigPin, LOW); //sets the trigger pin to LOW, ensuring no signals are being sent.
   delayMicroseconds(2);
@@ -138,7 +138,7 @@ void loop() {
   delay(100);
 }
 ```
-<p align="left"><em> Program 1: The above code triggers the ultrasonic sensor using trigPin, waits for the echo from echoPin, and calculates the distance to the object using the speed of sound. The code then displays the distance and monitors every 100 ms. The program completes these steps in 4 main parts. It defines the pins on the arduino that send and recieve the ultrasonic signal (trigPin and echoPin), and declares the variables duration and distance through a float. Then, the program sets up the trigger pin and echo pin as outputs and inputs to recieve signals. Finally, the loop function continuously to send pulses and measure the time for the pulse to travel back. It then converts this measurement to a distance. </em></p>
+<p align="left"><em> Program 1: The above code triggers the ultrasonic sensor using trigPin, waits for the echo from echoPin, and calculates the distance to the object using the speed of sound. The code then displays the distance and monitors it every 100 ms. The program completes these steps in 4 main parts. It defines the pins on the arduino that send and recieve the ultrasonic signal (trigPin and echoPin), and declares the variables duration and distance through a float. Then, the program sets up the trigger pin and echo pin as outputs and inputs to receive signals. Finally, the loop function continuously to send pulses and measure the time for the pulse to travel back. It then converts this measurement to a distance. </em></p>
 
 **Ultrasonic Sensor Algorithm Verification**
 | Set Distance (cm) | Measured Distance (cm)|
@@ -150,7 +150,7 @@ void loop() {
 |25	|24.11|
 |30|	28.86|
 
-<p align="left"><em> Table 1: This table shows the set distance a breadboard is placed away from the sensor, measured by a ruler, compared to the distance measured by the sensor and printed by the serial monitor. As shown, these values are very close, with only slight errors that can be contributed to discrepancies in the precision of measurement with a ruler.  </em></p>
+<p align="left"><em> Table 1: This table shows the set distance a breadboard is placed away from the sensor, measured by a ruler, compared to the distance measured by the sensor and printed by the serial monitor. As shown, these values are very close, with only slight errors that can be attributed to discrepancies in the precision of measurement with a ruler.  </em></p>
 
 **Ultrasonic Sensor Precision**
 | Distance Moved (cm) | Measured Distance (cm)|
@@ -297,7 +297,7 @@ void leftMotor(int motorSpeed)                        //function for driving the
   analogWrite(PWMB, abs(motorSpeed));                 //now that the motor direction is set, drive it at the entered speed
 }
 ```
-<p align="left"><em> Program 2.1: The above program controls two motors using a motor driver allowing it to move forward, backward, and turn based on user input via the serial monitor. The motors speed and direction are controlled using digital and PWM signals as communicated by the user in the serial monitor. These commands are made by the inputs direction distance speed as defined by botDirection, distance, and driveTime. More detail is shown in the comments throughout the program above. </em></p>
+<p align="left"><em> Program 2.1: The above program controls two motors using a motor driver, allowing it to move forward, backward, and turn based on user input via the serial monitor. The motors speed and direction are controlled using digital and PWM signals as communicated by the user in the serial monitor. These commands are made by the inputs direction distance speed as defined by botDirection, distance, and driveTime. More detail is shown in the comments throughout the program above. </em></p>
 
 ```ruby
 // Motor control pins
@@ -453,7 +453,7 @@ void leftMotor(int motorSpeed)
   analogWrite(PWMB, abs(motorSpeed));
 }
 ```
-<p align="left"><em> Program 2.2: This program uses the code outlined in Program 2.1 and incorporated feedback from the ultrasonic sensor to turn off the motor if it is within 10cm of an object. It does this by defining the sensor pins (trigPin and echoPin) and integrating them into the loop as as logic statement. When the sensor detects an object less than 10cm away, it stops the motors with rightMotor(0) and leftMotor (0) and prints a warning statment. It is important to note we were unable to find a way for the motors to stop while a function is running since the Arduino can only run one command at a time. Therefore, if an object was detected, the motors would continue moving until they finished their command, and then would not proceed with any further commands until the object was moved out of the way.   </em></p>
+<p align="left"><em> Program 2.2: This program uses the code outlined in Program 2.1 and incorporates feedback from the ultrasonic sensor to turn off the motor if it is within 10cm of an object. It does this by defining the sensor pins (trigPin and echoPin) and integrating them into the loop as a logic statement. When the sensor detects an object less than 10cm away, it stops the motors with rightMotor(0) and leftMotor (0) and prints a warning statment. It is important to note that we were unable to find a way for the motors to stop while a function is running since the Arduino can only run one command at a time. Therefore, if an object was detected, the motors would continue moving until they finished their command, and then would not proceed with any further commands until the object was moved out of the way.   </em></p>
 
 
 # Discussion
