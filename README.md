@@ -8,7 +8,7 @@
 
 # Summary  
 
-
+In this lab, we combined sensor interfacing with motor control to build a basic robotic system capable of collision avoidance. Our objectives were to learn how to use an ultrasonic sensor for distance measurement and to control motor movement via an H-Bridge motor driver using the Arduino platform. We started by assembling the HC-SR04 ultrasonic sensor and writing code to capture distance data, verifying the sensor’s resolution and precision with ruler tests. Next, we integrated the sensor with a motor driver and two motors, programming an algorithm to control motor speed and direction at various speeds (including commands for turning and reversing) to prevent collisions. This hands-on experience reinforced the integration of analog and digital sensor inputs into a dynamic control system, similar to the collision avoidance systems used in modern vehicles. Overall, the lab provided a strong foundation in real-time sensing and mobility control, key components for developing more advanced robotic applications.
 
 # Materials
 Computer running Arduino IDE
@@ -20,7 +20,7 @@ Sparkfun Inventor's Kit: RedBoard, ultrasonic sensor HC-SR04, two motors, motor 
 
 To start, we built the ultrasonic sensor circuit shown in Figures 1.1 and 1.2. 
 
-insert 1.1
+![image](https://github.com/user-attachments/assets/ee6a422e-6cd4-4be2-a3f9-4f06afe658ae)
 
 ![image](https://github.com/user-attachments/assets/07efb9cb-0f47-4c75-a698-2548d28765c3)
 
@@ -31,7 +31,7 @@ After launching Arduino IDE on the computer, we selected our Arduino Uno followi
 
 For this section, we built a new circuit shown in Figures 2.1, 2.2, and 2.3. We kept the ultrasonic sensor from Part 1 and moved it down to Rows 22-25. We also moved the sensor connections to pins 7 and 6. 
 
-insert 2.1
+![image](https://github.com/user-attachments/assets/f69f2fb9-e4ee-4561-a466-28a61b721ef1)
 
 ![image](https://github.com/user-attachments/assets/dec67ddd-f55a-487d-b39d-22821a3a2270)
 
