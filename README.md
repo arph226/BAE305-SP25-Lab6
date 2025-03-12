@@ -29,7 +29,7 @@ After launching Arduino IDE on the computer, we selected our Arduino Uno followi
 
 ### Part 2 - Move It
 
-For this section, we built a new circuit shown in Figures 2.1 and 2.2. We kept the ultrasonic sensor from Part 1 and moved it down to Rows 22-25. We also moved the sensor connections to pins 7 and 6. 
+For this section, we built a new circuit shown in Figures 2.1, 2.2, and 2.3. We kept the ultrasonic sensor from Part 1 and moved it down to Rows 22-25. We also moved the sensor connections to pins 7 and 6. 
 
 insert 2.1
 
