@@ -458,7 +458,7 @@ void leftMotor(int motorSpeed)
 
 # Discussion
 Discussion Question 1: What is the minimum speed number for the motors to move forward?
-
+We found the minimum speed to be 30. 
 
 # Conclusion
-
+In Lab 6 – Moving with Purpose: Sensing and Mobility for Basic Robot Applications, we successfully integrated sensor technology with motor control to create a basic collision avoidance system. By assembling and testing the HC-SR04 ultrasonic sensor, we confirmed its precision and resolution, enabling reliable distance measurements. Integrating this sensor data with the motor control system—using an H-Bridge to drive two motors—allowed us to program responsive movement commands. Although we encountered limitations due to the sequential nature of the Arduino's processing (resulting in brief delays when stopping motor commands), the overall system effectively demonstrated real-time collision avoidance. This lab deepened our understanding of analog and digital sensor interfacing, real-time control algorithms, and the practical challenges in robotics, laying a solid foundation for more advanced applications in mobility and autonomous navigation.
